@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Weather App" content="Weather Journal App to check current weather">
+        <title>Weather Journal</title>
+		<link href="./styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Weather Journal App</h1>
+        </header>
+        <main>
+            <article class="entryContainer">
+                <form>
+                    <label for="zip">ZIP Code</label>
+                    <input id="zip" type="text" placeholder="Enter a valid ZIP Code here (ex. 10001)." required>
+                    <label for="feelings">What are you feeling, now?</label>
+                    <textarea id="feelings" placeholder="Kindly, tell us how you're feeing today."></textarea>
+                    <button id="generate" type = "submit"> Look it up!</button>
+                </form>
+            </article>
+            <article class="response">
+                <h2>Most Recent Entry</h2>
+                <section class="responseContainer">
+
+                </section>
+            </article>
+        </main>
+        <script src="./app.js"></script>
+    </body>
+</html>
